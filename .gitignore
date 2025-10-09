@@ -1,0 +1,34 @@
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+
+# Visual Studio
+.vs/
+*.csproj
+*.sln
+*.user
+*.unityproj
+*.pidb
+*.suo
+*.tmp
+*.userprefs
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Crash and build files
+*.stackdump
+*.apk
+*.aab
+*.exe
+*.zip
+*.rar
+
+# Cache
+MemoryCaptures/
