@@ -7,7 +7,6 @@ public class Player : MonoBehaviour
 
     public float playerSpeed = 5f;
     public Rigidbody2D rb;
-        
     void Update()
     {
         
