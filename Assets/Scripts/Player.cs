@@ -2,19 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class Player : MonoBehaviour
 {
+    [Tooltip("Units per second")]
+    public float moveSpeed = 5f;
 
-    public float playerSpeed = 5f;
-    public Rigidbody2D rb;
+    Rigidbody2D rb;
+
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        rb.freezeRotation = true;
+    }
+
     void Update()
     {
-        
-        float moveX = Input.GetAxis("Horizontal");
-        float moveY = Input.GetAxis("Vertical");
-
-        Vector2 movement = new Vector2(moveX, moveY);
-        rb.velocity = movement * playerSpeed;
-
+        float x = Input.GetAxisRaw("Horizontal");
+        float y = Input.GetAxisRaw("Vertical");
+        Vector2 v = new Vector2(x, y).normalized * moveSpeed;
+        rb.velocity = v;
     }
 }
