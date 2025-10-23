@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/_Project/Scenes/MainMap.unity
+    guid: 14a32528f0f03bb4e82d047d855bffc2
+  - enabled: 1
+    path: Assets/_Project/Scenes/Preguica_Phase.unity
+    guid: 488b28ee6dd4f3248bd76659811018a8
+  - enabled: 1
+    path: Assets/_Project/Scenes/BaattleScene.unity
+    guid: 91e88d79fd3f30f4b9e59fce40196c66
   m_configObjects: {}
