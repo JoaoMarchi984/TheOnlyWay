@@ -1,0 +1,928 @@
+fileFormatVersion: 2
+guid: cfd2abff36ff06a43bef8af7d306daf4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: poses 1 copiar_0
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1351
+        width: 202
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32374b9f7933a3e48abb6c27ed7e40f8
+      internalID: 1034349062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1353
+        width: 202
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f8bb0c53606ef44a34683c7ba0d6a6
+      internalID: -224621552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_2
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1357
+        width: 202
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d796c26f362ca43b5a57d6f5ff1dfa
+      internalID: -1899299315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_3
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 1357
+        width: 203
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c0d349f18801f4d970e920e2583e3c
+      internalID: -1755031021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_4
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 1357
+        width: 203
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8243b18b4ef9d50488b535e1b2841e68
+      internalID: -275585841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_5
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 1384
+        width: 176
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55efb40562f89e34a810a53bbc172d0d
+      internalID: 1806923206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_6
+      rect:
+        serializedVersion: 2
+        x: 1783
+        y: 1385
+        width: 177
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce58b7519a8a7b4782a04cec2b883cb
+      internalID: -1859733817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_7
+      rect:
+        serializedVersion: 2
+        x: 2025
+        y: 1384
+        width: 177
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b119d275525d5ad40a1a003409151f32
+      internalID: 1900653434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_8
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1044
+        width: 202
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f6a4c2eea35da438a2b9ffd23aa4ce
+      internalID: -254308930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_9
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1056
+        width: 202
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5903fced6e2a2a94fb24b3f347c8e6e2
+      internalID: 1455828304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_10
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 1064
+        width: 202
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139cdf4791146914c9271ee03404411d
+      internalID: -54855637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_11
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 1087
+        width: 202
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61fe43db818eda34dbede221f3a7129e
+      internalID: -1789432088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_12
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 1078
+        width: 203
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfd7394b8fe98c42a3c3e9a720d62a6
+      internalID: -647050011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_13
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 1096
+        width: 176
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10b9f68f0ba5584cb4282d1b3da66ea
+      internalID: -590292870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_14
+      rect:
+        serializedVersion: 2
+        x: 1783
+        y: 1112
+        width: 177
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25246d2c866114c498b780ede44f7b18
+      internalID: 1093191033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_15
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 1110
+        width: 13
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4223a74934fc3df48b6fb1bb49baf59d
+      internalID: 778365539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_16
+      rect:
+        serializedVersion: 2
+        x: 2025
+        y: 1110
+        width: 177
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e04b32ac460bf4585467c4a649f74d
+      internalID: 1229696526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_17
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 808
+        width: 150
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae75fd65afb8a54abb23a7ef1e9aa85
+      internalID: 695946016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_18
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 809
+        width: 151
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86670bda14ef1b546b4b0fabaf9451e8
+      internalID: -1549364195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_19
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 806
+        width: 150
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4adc94fbf10311849b8495afffa1d7db
+      internalID: -1710443903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_20
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 308
+        width: 164
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5e10fab16c32548826edb505b835d3
+      internalID: -52624987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_21
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 308
+        width: 164
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53305faccebd864a89ede9b740e6a2e
+      internalID: -1403552382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_22
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 308
+        width: 163
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d4afc657357b3459a8258e97802334
+      internalID: -846920921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_23
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 308
+        width: 166
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abad5d2398c2eef46bb12767d135e52f
+      internalID: -1563953304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_24
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 302
+        width: 166
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8630da0d51f9c7043866fc84f9f4a2bd
+      internalID: 1795610349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_25
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 466
+        width: 150
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e413d36317b51448c2883e33fe9912
+      internalID: -711187438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_26
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 475
+        width: 150
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708900441187fe644a2d54b7e9cd97c3
+      internalID: -940255952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_27
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 466
+        width: 150
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ef07cc0dbc2a8469c48886c85d44c7
+      internalID: 231862177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_28
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 275
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee996c5a480d3c747a66c2d6ceeaeed4
+      internalID: -437218043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_29
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 30
+        width: 164
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474478fe9f4544f41811edc005885f7f
+      internalID: 296070216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_30
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 0
+        width: 187
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e96b215a0f1c57b4bae4d94fb9b92ccc
+      internalID: 1363420362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_31
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 0
+        width: 183
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5669ac61931c3d41ac7b8a228dbc78b
+      internalID: -468221673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_32
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 0
+        width: 167
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994a54a791f8c0649bd284a10094b2fb
+      internalID: -35062639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_33
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 228
+        width: 202
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4048780ad11d4fd42834e10a11881aa6
+      internalID: 733062330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_34
+      rect:
+        serializedVersion: 2
+        x: 1981
+        y: 221
+        width: 201
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4af9dcc1d6ef04bab73d639022b4a7
+      internalID: 1140245981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_35
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 36
+        width: 202
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88573e8952248124b847f77e729d2ad0
+      internalID: -55450403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poses 1 copiar_36
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 36
+        width: 200
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21793d4c9cf8cee448b971457b54e1a2
+      internalID: -1528325168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      poses 1 copiar_0: 1034349062
+      poses 1 copiar_1: -224621552
+      poses 1 copiar_10: -54855637
+      poses 1 copiar_11: -1789432088
+      poses 1 copiar_12: -647050011
+      poses 1 copiar_13: -590292870
+      poses 1 copiar_14: 1093191033
+      poses 1 copiar_15: 778365539
+      poses 1 copiar_16: 1229696526
+      poses 1 copiar_17: 695946016
+      poses 1 copiar_18: -1549364195
+      poses 1 copiar_19: -1710443903
+      poses 1 copiar_2: -1899299315
+      poses 1 copiar_20: -52624987
+      poses 1 copiar_21: -1403552382
+      poses 1 copiar_22: -846920921
+      poses 1 copiar_23: -1563953304
+      poses 1 copiar_24: 1795610349
+      poses 1 copiar_25: -711187438
+      poses 1 copiar_26: -940255952
+      poses 1 copiar_27: 231862177
+      poses 1 copiar_28: -437218043
+      poses 1 copiar_29: 296070216
+      poses 1 copiar_3: -1755031021
+      poses 1 copiar_30: 1363420362
+      poses 1 copiar_31: -468221673
+      poses 1 copiar_32: -35062639
+      poses 1 copiar_33: 733062330
+      poses 1 copiar_34: 1140245981
+      poses 1 copiar_35: -55450403
+      poses 1 copiar_36: -1528325168
+      poses 1 copiar_4: -275585841
+      poses 1 copiar_5: 1806923206
+      poses 1 copiar_6: -1859733817
+      poses 1 copiar_7: 1900653434
+      poses 1 copiar_8: -254308930
+      poses 1 copiar_9: 1455828304
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
