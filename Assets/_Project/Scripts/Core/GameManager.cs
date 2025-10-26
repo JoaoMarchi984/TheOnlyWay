@@ -21,14 +21,12 @@ namespace TOW.Core
         public int PlayerLevel = 1;
         public int PlayerXP = 0;
         public int PlayerXPToNext;
-        public int PlayerMaxHealth;
-        public int PlayerCurrentHealth;
         public int PlayerMaxFaith;
         public int PlayerCurrentFaith;
 
         [Header("Player - Runtime Flags")]
         public bool IsFastingActive = false;
-        public int  FastingTurnsLeft = 0;
+        public int FastingTurnsLeft = 0;
 
         [Header("World/Progress")]
         public PhaseId CurrentPhase = PhaseId.Preguica;
@@ -43,7 +41,7 @@ namespace TOW.Core
         public bool ShowFPSCounter = true;
         public bool EnableVSyncInBuild = false;
 
-        // Events globais (outros sistemas podem escutar)
+        // Eventos globais (para UI ou sistemas reagirem)
         public event Action OnStatsChanged;
         public event Action OnFaithChanged;
         public event Action OnLevelUp;
@@ -54,7 +52,6 @@ namespace TOW.Core
             Instance = this;
             DontDestroyOnLoad(gameObject);
 
-            // Defaults (caso Config não tenha sido aplicado pelo Bootstrap)
             if (Config == null) return;
 
             InitializeFromConfig();
@@ -68,25 +65,22 @@ namespace TOW.Core
 
         private void InitializeFromConfig()
         {
-            // XP
+            // XP inicial
             PlayerXPToNext = Config.baseXPToNextLevel;
 
-            // Vida/Fé iniciais
-            PlayerMaxHealth     = Config.playerBaseMaxHealth;
-            PlayerCurrentHealth = PlayerMaxHealth;
-
-            PlayerMaxFaith      = Config.playerBaseMaxFaith;
-            PlayerCurrentFaith  = Mathf.Min(PlayerMaxFaith, 50); // inicia com 50 (ajuste se quiser)
+            // Fé inicial
+            PlayerMaxFaith = Config.playerBaseMaxFaith;
+            PlayerCurrentFaith = Mathf.Min(PlayerMaxFaith, 50); // começa com 50 de fé (ajustável no GDD)
 
             // UX
-            ShowFPSCounter   = Config.showFPSCounter;
+            ShowFPSCounter = Config.showFPSCounter;
             EnableVSyncInBuild = Config.enableVSyncInBuild;
 
-            // Fasting
-            IsFastingActive  = false;
+            // Jejum
+            IsFastingActive = false;
             FastingTurnsLeft = 0;
 
-            // Encontros
+            // Fase
             CurrentPhase = PhaseId.Preguica;
 
             OnStatsChanged?.Invoke();
@@ -107,10 +101,12 @@ namespace TOW.Core
         private void LevelUp()
         {
             PlayerLevel++;
-            // Aumenta Faith máxima a cada level:
+
+            // Aumenta a fé máxima
             PlayerMaxFaith += 10;
-            // Cura total ao upar (opcional):
-            PlayerCurrentHealth = PlayerMaxHealth;
+
+            // Recupera fé total
+            PlayerCurrentFaith = PlayerMaxFaith;
 
             // Escala XP necessária
             PlayerXPToNext = Mathf.RoundToInt(PlayerXPToNext * Config.xpNextLevelScale);

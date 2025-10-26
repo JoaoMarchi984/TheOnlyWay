@@ -688,13 +688,13 @@ TextureImporter:
       name: poses 1 copiar_28
       rect:
         serializedVersion: 2
-        x: 180
+        x: 246
         y: 29
-        width: 235
-        height: 225
+        width: 169
+        height: 222
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 64, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -730,13 +730,13 @@ TextureImporter:
       name: poses 1 copiar_30
       rect:
         serializedVersion: 2
-        x: 718
+        x: 741
         y: 34
-        width: 187
-        height: 220
+        width: 164
+        height: 219
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 22, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -751,13 +751,13 @@ TextureImporter:
       name: poses 1 copiar_31
       rect:
         serializedVersion: 2
-        x: 987
-        y: 0
-        width: 167
-        height: 254
+        x: 985
+        y: 32
+        width: 169
+        height: 222
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 34, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -772,13 +772,13 @@ TextureImporter:
       name: poses 1 copiar_32
       rect:
         serializedVersion: 2
-        x: 1238
-        y: 0
-        width: 167
-        height: 262
+        x: 1237
+        y: 36
+        width: 168
+        height: 226
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 34, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0

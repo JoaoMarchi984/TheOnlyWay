@@ -10,6 +10,7 @@ namespace TOW.Data
         [Header("Player Base")]
         public int playerBaseMaxHealth = 100;
         public int playerBaseMaxFaith = 100;
+
         public float playerBaseMoveSpeed = 5f;
 
         [Header("Balance - Jejum")]
