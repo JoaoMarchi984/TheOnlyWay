@@ -7,35 +7,29 @@ namespace TOW.Data
     [CreateAssetMenu(fileName = "GameConfig", menuName = "TheOnlyWay/Configs/GameConfig")]
     public class GameConfig : ScriptableObject
     {
-        [Header("Player Base")]
-        public int playerBaseMaxHealth = 100;
+        [Header("Player Base Stats")]
         public int playerBaseMaxFaith = 100;
-
         public float playerBaseMoveSpeed = 5f;
 
-        [Header("Balance - Jejum")]
+        [Header("Jejum")]
         [Range(0.1f, 3f)] public float fastingDamageMultiplier = 1.45f;
-        [Range(0, 10)] public int fastingDefaultTurns = 3;
+        [Range(0.1f, 3f)] public float fastingDefenseMultiplier = 1.2f;
+        public int fastingDefaultTurns = 3;
 
-        [Header("Balance - Oração")]
+        [Header("Oração")]
         public int prayerGoodFaithGain = 10;
         public int prayerPerfectFaithGain = 20;
 
-        [Header("Balance - Encontros")]
-        [Range(0f, 1f)] public float baseEncounterChance = 0.12f;
-
-        [Header("XP / Level")]
+        [Header("XP e Progressão")]
         public int baseXPToNextLevel = 100;
         public float xpNextLevelScale = 1.25f;
 
         [Header("Boss - Preguiça")]
-        [Range(0,100)] public int bossSleepChance = 30;
-        [Range(1,10)] public int bossSleepDurationTurns = 2;
-        public int bossHeavyAttackDamage = 18;
-        public int bossSelfHealAmount = 15;
+        public int bossSelfHealAmount = 20;
+        public int bossHeavyAttackDamage = 25;
 
-        [Header("Build & UX")]
-        public bool enableVSyncInBuild = false;
+        [Header("UX")]
         public bool showFPSCounter = true;
+        public bool enableVSyncInBuild = false;
     }
 }

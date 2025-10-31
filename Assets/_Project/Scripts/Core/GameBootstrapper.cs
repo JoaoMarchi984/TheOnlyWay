@@ -8,24 +8,17 @@ namespace TOW.Core
 {
     public class GameBootstrapper : MonoBehaviour
     {
-        [Header("Scriptable Configs")]
         public GameConfig gameConfig;
 
         private void Awake()
         {
-            ServiceLocator.Register(new RandomService());
-            ServiceLocator.Register(new AudioService());
-            ServiceLocator.Register(new SaveService());
-
             if (GameManager.Instance == null)
             {
                 var go = new GameObject("[GameManager]");
-                go.AddComponent<GameManager>();
+                var manager = go.AddComponent<GameManager>();
+                manager.Config = gameConfig; // só isso basta
                 DontDestroyOnLoad(go);
             }
-
-            if (gameConfig != null)
-                GameManager.Instance.ApplyConfig(gameConfig);
         }
     }
 }
