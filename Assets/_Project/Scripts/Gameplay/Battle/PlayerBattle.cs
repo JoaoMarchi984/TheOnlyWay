@@ -2,37 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TOW.Gameplay.Battle
+public class PlayerBattle : MonoBehaviour
 {
-    public class PlayerBattle : MonoBehaviour
+    public int maxFaith = 100;
+    public int currentFaith;
+
+    private void Awake()
     {
-        [Header("Fé do Jogador")]
-        public int maxFaith = 100;
-        public int currentFaith;
+        currentFaith = maxFaith;
+    }
 
-        void Awake()
-        {
-            currentFaith = maxFaith;
-        }
+    public void TakeDamage(int amount)
+    {
+        currentFaith -= amount;
+        if (currentFaith < 0) currentFaith = 0;
+    }
 
-        public void Setup()
-        {
-            currentFaith = maxFaith;
-            Debug.Log("Player pronto para a batalha com " + currentFaith + " de Fé.");
-        }
-
-        public void TakeDamage(int amount)
-        {
-            currentFaith -= amount;
-            if (currentFaith < 0) currentFaith = 0;
-            Debug.Log("Player perdeu " + amount + " de Fé! Restante: " + currentFaith);
-        }
-
-        public void Heal(int amount)
-        {
-            currentFaith += amount;
-            if (currentFaith > maxFaith) currentFaith = maxFaith;
-            Debug.Log("Player recuperou " + amount + " de Fé! Total: " + currentFaith);
-        }
+    public void HealFaith(int amount)
+    {
+        currentFaith += amount;
+        if (currentFaith > maxFaith) currentFaith = maxFaith;
     }
 }
