@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class EnemyBattle : MonoBehaviour
 {
-    public int maxHP = 50;
-    public int currentHP;
+    public int maxLife = 50;
+    public int currentLife = 50;
 
-    private void Awake()
-    {
-        currentHP = maxHP;
-    }
+    public int attackDamage = 10;
 
     public void TakeDamage(int amount)
     {
-        currentHP -= amount;
-        if (currentHP < 0) currentHP = 0;
+        currentLife -= amount;
+        if (currentLife < 0)
+            currentLife = 0;
     }
 }

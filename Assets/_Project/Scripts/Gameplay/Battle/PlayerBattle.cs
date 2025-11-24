@@ -5,22 +5,21 @@ using UnityEngine;
 public class PlayerBattle : MonoBehaviour
 {
     public int maxFaith = 100;
-    public int currentFaith;
+    public int currentFaith = 100;
 
-    private void Awake()
-    {
-        currentFaith = maxFaith;
-    }
+    public bool isShielded = false;
 
     public void TakeDamage(int amount)
     {
         currentFaith -= amount;
-        if (currentFaith < 0) currentFaith = 0;
+        if (currentFaith < 0)
+            currentFaith = 0;
     }
 
-    public void HealFaith(int amount)
+    public void Heal(int amount)
     {
         currentFaith += amount;
-        if (currentFaith > maxFaith) currentFaith = maxFaith;
+        if (currentFaith > maxFaith)
+            currentFaith = maxFaith;
     }
 }
