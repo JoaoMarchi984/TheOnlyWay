@@ -4,14 +4,6 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public enum VerseType { Attack, Heal, Shield }
-
-[System.Serializable]
-public class Verse
-{
-    public string verseName;
-    public VerseType type;
-}
 
 public class BattleSystem : MonoBehaviour
 {
