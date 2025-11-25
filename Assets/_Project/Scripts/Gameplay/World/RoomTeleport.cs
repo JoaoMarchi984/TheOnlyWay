@@ -5,7 +5,6 @@ using Cinemachine;
 
 public class RoomTeleport : MonoBehaviour
 {
-    [Header("Configuração do Teleporte")]
     public Transform targetSpawn;
     public CinemachineVirtualCamera targetCamera;
 
@@ -13,17 +12,14 @@ public class RoomTeleport : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // Move o Player REAL, não o collider
-            var player = other.GetComponentInParent<Player>();
-            if (player != null)
-            {
-                player.transform.position = targetSpawn.position;
-            }
+            // Teleporta player
+            other.transform.position = targetSpawn.position;
 
-            // Troca prioridade das câmeras
+            // Desativa todas as câmeras
             foreach (var cam in FindObjectsOfType<CinemachineVirtualCamera>())
                 cam.Priority = 0;
 
+            // Ativa a câmera do cômodo atual
             targetCamera.Priority = 10;
         }
     }

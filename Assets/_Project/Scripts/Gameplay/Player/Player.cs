@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
 {
     public float moveSpeed = 5f;
 
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
     Animator animator;
     Vector2 lastMoveDir = Vector2.down; 
 
