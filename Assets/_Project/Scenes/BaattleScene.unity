@@ -188,9 +188,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e403f3e0130ca42accb1f22790b84c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxLife: 50
-  currentLife: 50
-  attackDamage: 10
+  maxHealth: 100
+  currentHealth: 100
 --- !u!212 &204292346
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -829,8 +828,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c99cb25467069ab46adfc7fa893d4610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verse: {fileID: 11400000, guid: 657cd30a8bdfd444ba5d30556d9095d9, type: 2}
-  battle: {fileID: 1968180801}
 --- !u!1 &541640044
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,8 +974,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c99cb25467069ab46adfc7fa893d4610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verse: {fileID: 11400000, guid: a9ff9d2c5058b7e4eb60bf7dbcbdc4cd, type: 2}
-  battle: {fileID: 1968180801}
 --- !u!1 &596401084
 GameObject:
   m_ObjectHideFlags: 0
@@ -1424,8 +1419,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c99cb25467069ab46adfc7fa893d4610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verse: {fileID: 11400000, guid: 8ad623fa80c7bc345a04001a744f44e1, type: 2}
-  battle: {fileID: 1968180801}
 --- !u!1 &732528171
 GameObject:
   m_ObjectHideFlags: 0
@@ -1601,6 +1594,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767517343}
   m_CullTransparentMesh: 1
+--- !u!114 &771361893 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 148933260397195189, guid: ea215bdc431ef874e8d0db6bd8be5dce, type: 3}
+  m_PrefabInstance: {fileID: 1955800010}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2bb8b34b14d46942b1cb6e4ff22f73a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &817082603
 GameObject:
   m_ObjectHideFlags: 0
@@ -2125,8 +2129,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c99cb25467069ab46adfc7fa893d4610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verse: {fileID: 11400000, guid: 5d54abd872f19c84d8df4ef5dd143e85, type: 2}
-  battle: {fileID: 1968180801}
 --- !u!1 &1015537399
 GameObject:
   m_ObjectHideFlags: 0
@@ -2759,8 +2761,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c99cb25467069ab46adfc7fa893d4610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verse: {fileID: 11400000, guid: b29b8eaf4b412e3469e4ed15e8ad17b2, type: 2}
-  battle: {fileID: 1968180801}
 --- !u!1 &1375282367
 GameObject:
   m_ObjectHideFlags: 0
@@ -3720,8 +3720,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c99cb25467069ab46adfc7fa893d4610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verse: {fileID: 11400000, guid: 6dcc3899471415c4d91f01b87d27ef36, type: 2}
-  battle: {fileID: 1968180801}
 --- !u!1001 &1955800010
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3970,21 +3968,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c523c76b5f9c6d8418bc4f8e76c0b4df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerFaithText: {fileID: 338115871}
-  enemyHealthText: {fileID: 1346411400}
-  logText: {fileID: 1421484320}
-  verseButtons:
-  - {fileID: 1927731249}
-  - {fileID: 987537690}
-  - {fileID: 664288146}
-  - {fileID: 430590723}
-  - {fileID: 541640046}
-  - {fileID: 1372368294}
-  endBattlePanel: {fileID: 1586842195}
-  resultText: {fileID: 1558665056}
-  maxFaith: 100
-  maxEnemyHealth: 100
-  state: 0
+  player: {fileID: 771361893}
+  enemy: {fileID: 204292345}
+  playerCanAct: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

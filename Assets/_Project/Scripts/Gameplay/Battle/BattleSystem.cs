@@ -3,134 +3,71 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using TOW.Core;
+using TOW.Data;
 
 
-public class BattleSystem : MonoBehaviour
+namespace TOW.Battle
 {
-    [Header("UI")]
-    public TextMeshProUGUI playerFaithText;
-    public TextMeshProUGUI enemyHealthText;
-    public TextMeshProUGUI logText;
-
-    [Header("Buttons")]
-    public Button[] verseButtons;
-    public Verse[] verses;
-
-    [Header("Stats")]
-    public int playerFaith = 100;
-    public int enemyHealth = 100;
-    private int playerShield = 0;
-
-    private bool playerCanAct = true;
-
-    void Start()
+    public class BattleSystem : MonoBehaviour
     {
-        AssignButtonNames();  // coloca nome no botão
-        HideAllButtons();
-        Invoke(nameof(ShowAllButtons), 0.5f);
+        public PlayerBattle player;
+        public EnemyBattle enemy;
 
-        UpdateUI();
-        logText.text = "Seu turno! Escolha um versículo.";
-    }
+        public System.Action OnPlayerTurn;
+        public System.Action OnEnemyTurn;
+        public System.Action OnBattleEnd;
 
-    // ================================
-    // POLIMENTO
-    // ================================
+        public bool playerCanAct = true;
 
-    void AssignButtonNames()
-    {
-        for (int i = 0; i < verseButtons.Length; i++)
+        public void PlayerUseVerse(VerseData verse)
         {
-            if (i < verses.Length)
+            if (!playerCanAct) return;
+
+            playerCanAct = false;
+
+            switch (verse.type)
             {
-                TextMeshProUGUI t = verseButtons[i].GetComponentInChildren<TextMeshProUGUI>();
-                t.text = verses[i].verseName;
+                case VerseType.Attack:
+                    enemy.TakeDamage(verse.power);
+                    break;
 
-                int index = i;
-                verseButtons[i].onClick.AddListener(() => OnVerseSelected(verses[index]));
+                case VerseType.Heal:
+                    player.Heal(verse.power);
+                    break;
+
+                case VerseType.Shield:
+                    player.AddShield(verse.shieldAmount);
+                    break;
             }
+
+            if (enemy.currentHealth <= 0)
+            {
+                OnBattleEnd?.Invoke();
+                return;
+            }
+
+            Invoke(nameof(EnemyAction), 1f);
         }
-    }
 
-    void HideAllButtons()
-    {
-        foreach (var b in verseButtons)
-            b.gameObject.SetActive(false);
-    }
-
-    void ShowAllButtons()
-    {
-        foreach (var b in verseButtons)
-            b.gameObject.SetActive(true);
-    }
-
-    // ================================
-    // LÓGICA PRINCIPAL
-    // ================================
-    public void OnVerseSelected(Verse verse)
-    {
-        if (!playerCanAct) return; // anti-spam
-
-        playerCanAct = false;
-        HideAllButtons();
-
-        switch (verse.type)
+        private void EnemyAction()
         {
-            case VerseType.Attack:
-                enemyHealth -= 20;
-                logText.text = $"{verse.verseName}: Você atacou com poder espiritual!";
-                break;
+            enemyAttack();
 
-            case VerseType.Heal:
-                playerFaith += 15;
-                if (playerFaith > 100) playerFaith = 100;
-                logText.text = $"{verse.verseName}: Você restaurou sua fé!";
-                break;
+            if (player.currentFaith <= 0)
+            {
+                OnBattleEnd?.Invoke();
+                return;
+            }
 
-            case VerseType.Shield:
-                playerShield = 15;
-                logText.text = $"{verse.verseName}: Sua resistência espiritual aumentou!";
-                break;
+            playerCanAct = true;
+            OnPlayerTurn?.Invoke();
         }
 
-        UpdateUI();
-
-        // Inimigo age depois de 1 segundo
-        Invoke(nameof(EnemyTurn), 1.0f);
-    }
-
-    void EnemyTurn()
-    {
-        int damage = 20;
-
-        if (playerShield > 0)
+        private void enemyAttack()
         {
-            damage -= playerShield;
-            if (damage < 0) damage = 0;
-            playerShield = 0;
+            int damage = 20;
+            player.ApplyAttack(damage);
         }
-
-        playerFaith -= damage;
-        if (playerFaith < 0) playerFaith = 0;
-
-        logText.text += $"\nA tentação atacou causando {damage} de dano!";
-
-        UpdateUI();
-
-        // volta turno do player após delay
-        Invoke(nameof(EnablePlayerTurn), 1.0f);
-    }
-
-    void EnablePlayerTurn()
-    {
-        playerCanAct = true;
-        ShowAllButtons();
-        logText.text = "Seu turno!";
-    }
-
-    void UpdateUI()
-    {
-        playerFaithText.text = $"Fé: {playerFaith}/100";
-        enemyHealthText.text = $"Vida: {enemyHealth}/100";
     }
 }

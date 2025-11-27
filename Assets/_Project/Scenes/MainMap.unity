@@ -281,7 +281,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetSpawn: {fileID: 1344461299}
-  targetCamera: {fileID: 0}
+  cameraToActivate: {fileID: 854232676}
+  cameraToDisable: {fileID: 2058199105}
 --- !u!61 &18950834
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -939,8 +940,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 212841067
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 061f3f8aee25af04dbf27cb19d7e86ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1582,7 +1583,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetSpawn: {fileID: 339750864}
-  targetCamera: {fileID: 1839203855}
+  cameraToActivate: {fileID: 1839203855}
+  cameraToDisable: {fileID: 854232676}
 --- !u!1 &400170824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1742,7 +1744,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetSpawn: {fileID: 1256369560}
-  targetCamera: {fileID: 0}
+  cameraToActivate: {fileID: 2058199105}
+  cameraToDisable: {fileID: 1358112881}
 --- !u!61 &443920798
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2566,7 +2569,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetSpawn: {fileID: 576123615}
-  targetCamera: {fileID: 0}
+  cameraToActivate: {fileID: 2058199105}
+  cameraToDisable: {fileID: 746369498}
 --- !u!61 &716015582
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2958,7 +2962,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetSpawn: {fileID: 1541617728}
-  targetCamera: {fileID: 0}
+  cameraToActivate: {fileID: 2058199105}
+  cameraToDisable: {fileID: 854232676}
 --- !u!61 &796481577
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3490,7 +3495,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetSpawn: {fileID: 1781098707}
-  targetCamera: {fileID: 0}
+  cameraToActivate: {fileID: 746369498}
+  cameraToDisable: {fileID: 2058199105}
 --- !u!61 &911915614
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3716,7 +3722,7 @@ GameObject:
   - component: {fileID: 994947938}
   m_Layer: 0
   m_Name: TileMap
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3819,8 +3825,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 212841067
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a7e6d8a7642cfc44ab9a00f25d61a520, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3918,10 +3924,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 211718864318342138, guid: 42740561fd4c7ab4bac2d7e07be8b7d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 3520560247729450060, guid: 42740561fd4c7ab4bac2d7e07be8b7d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.6
@@ -4087,8 +4089,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 212841067
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 43b422338ced6e844a4e285b012e6eec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5261,7 +5263,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetSpawn: {fileID: 1732092573}
-  targetCamera: {fileID: 0}
+  cameraToActivate: {fileID: 1358112881}
+  cameraToDisable: {fileID: 2058199105}
 --- !u!61 &1584439564
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5507,7 +5510,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetSpawn: {fileID: 808062825}
-  targetCamera: {fileID: 854232676}
+  cameraToActivate: {fileID: 854232676}
+  cameraToDisable: {fileID: 1839203855}
 --- !u!61 &1718873435
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6154,8 +6158,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 212841067
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 83e8abe608eda4b49a8babc0ae5c7a4f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -7248,8 +7252,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 212841067
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 14375533ff0a1d640b43bbc28a649057, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

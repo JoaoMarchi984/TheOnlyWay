@@ -8,16 +8,13 @@ namespace TOW.Core
 {
     public class GameBootstrapper : MonoBehaviour
     {
-        public GameConfig gameConfig;
+        public GameManager gameManagerPrefab;
 
         private void Awake()
         {
             if (GameManager.Instance == null)
             {
-                var go = new GameObject("[GameManager]");
-                var manager = go.AddComponent<GameManager>();
-                manager.Config = gameConfig; // só isso basta
-                DontDestroyOnLoad(go);
+                Instantiate(gameManagerPrefab);
             }
         }
     }

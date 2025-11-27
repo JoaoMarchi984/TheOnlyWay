@@ -2,24 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerBattle : MonoBehaviour
+namespace TOW.Battle
 {
-    public int maxFaith = 100;
-    public int currentFaith = 100;
-
-    public bool isShielded = false;
-
-    public void TakeDamage(int amount)
+    public class PlayerBattle : MonoBehaviour
     {
-        currentFaith -= amount;
-        if (currentFaith < 0)
-            currentFaith = 0;
-    }
+        public int maxFaith = 100;
+        public int currentFaith = 100;
+        public int shield = 0;
 
-    public void Heal(int amount)
-    {
-        currentFaith += amount;
-        if (currentFaith > maxFaith)
-            currentFaith = maxFaith;
+        public void ApplyAttack(int value)
+        {
+            int finalDamage = Mathf.Max(0, value - shield);
+            currentFaith -= finalDamage;
+            shield = 0;
+
+            if (currentFaith < 0)
+                currentFaith = 0;
+        }
+
+        public void Heal(int value)
+        {
+            currentFaith = Mathf.Min(maxFaith, currentFaith + value);
+        }
+
+        public void AddShield(int value)
+        {
+            shield = value;
+        }
     }
 }
