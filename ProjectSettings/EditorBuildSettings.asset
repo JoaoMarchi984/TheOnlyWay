@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Project/Scenes/BaattleScene.unity
     guid: 91e88d79fd3f30f4b9e59fce40196c66
+  - enabled: 1
+    path: Assets/_Project/Scenes/Menu.unity
+    guid: 4edde9ad697eda6499b32e5f8f6d80fa
+  - enabled: 1
+    path: Assets/_Project/Scenes/VerseSelection.unity
+    guid: 9411e79ceaa25fd45842748a73974d5f
   m_configObjects: {}

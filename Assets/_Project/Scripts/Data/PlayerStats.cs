@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TOW.Core;
 
-public class PlayerStats : MonoBehaviour
+namespace TOW.Core
 {
-    // Start is called before the first frame update
-    void Start()
+    public class PlayerStats : MonoBehaviour
     {
-        
-    }
+        public int GetCurrentFaith() => GameManager.Instance.currentFaith;
+        public int GetMaxFaith() => GameManager.Instance.maxFaith;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public void TakeDamage(int amount)
+        {
+            GameManager.Instance.currentFaith -= amount;
+
+            if (GameManager.Instance.currentFaith < GameManager.Instance.minFaith)
+                GameManager.Instance.currentFaith = GameManager.Instance.minFaith;
+        }
     }
 }

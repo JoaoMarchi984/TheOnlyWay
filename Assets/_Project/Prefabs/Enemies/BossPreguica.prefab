@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e403f3e0130ca42accb1f22790b84c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: 
-  maxHealth: 0
-  currentHealth: 0
-  damage: 0
+  enemyName: BossPreguica
+  maxHealth: 500
+  currentHealth: 500
+  damage: 17

@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine.UI;
 using TOW.Data;
 using TOW.Battle;
+using TOW.Core;
 
 namespace TOW.UI
 {
@@ -15,21 +16,49 @@ namespace TOW.UI
         public Button button;
 
         private VerseData verse;
-        private BattleSystem battle;
+        private VerseSelectionUI manager;
+        private bool equipped;
 
-        public void Setup(VerseData data, BattleSystem system)
+        public VerseData Verse => verse;
+
+        public void Setup(VerseData data, VerseSelectionUI ui, bool isEquipped)
         {
             verse = data;
-            battle = system;
+            manager = ui;
+            equipped = isEquipped;
 
-            nameText.text = verse.verseName;
-            descText.text = verse.description;
+            nameText.text = data.verseName;
+            descText.text = data.description;
 
+            RefreshButton();
+        }
+
+        /// <summary>
+        /// Atualiza listener do botão conforme o slot está equipado ou não.
+        /// </summary>
+        private void RefreshButton()
+        {
             button.onClick.RemoveAllListeners();
-            button.onClick.AddListener(() =>
+
+            if (!equipped)
             {
-                battle.PlayerUseVerse(verse);
-            });
+                // clicar para EQUIPAR
+                button.onClick.AddListener(() => manager.TryEquip(this));
+            }
+            else
+            {
+                // clicar para DESEQUIPAR
+                button.onClick.AddListener(() => manager.TryUnequip(this));
+            }
+        }
+
+        /// <summary>
+        /// Chamado pelo VerseSelectionUI ao equipar o versículo.
+        /// </summary>
+        public void MarkEquipped(bool value)
+        {
+            equipped = value;
+            RefreshButton();
         }
     }
 }

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using TOW.Core;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Player : MonoBehaviour
@@ -9,7 +11,10 @@ public class Player : MonoBehaviour
 
     public Rigidbody2D rb;
     Animator animator;
-    Vector2 lastMoveDir = Vector2.down; 
+    Vector2 lastMoveDir = Vector2.down;
+
+    private bool canInteract = false;
+    private string interactType = "";
 
     void Awake()
     {
@@ -41,6 +46,35 @@ public class Player : MonoBehaviour
 
             animator.SetFloat("LastMoveX", lastMoveDir.x);
             animator.SetFloat("LastMoveY", lastMoveDir.y);
+        }
+
+        // -------- INTERAÇÃO (PRESSIONAR E) --------
+        if (canInteract && Input.GetKeyDown(KeyCode.E))
+        {
+            // salva de onde o player veio
+            GameManager.Instance.lastSceneBeforeVerses =
+                SceneManager.GetActiveScene().name;
+
+            // abre a tela de versículos
+            SceneManager.LoadScene("VerseSelection");
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Verses"))
+        {
+            canInteract = true;
+            interactType = "verses";
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Verses"))
+        {
+            canInteract = false;
+            interactType = "";
         }
     }
 }
